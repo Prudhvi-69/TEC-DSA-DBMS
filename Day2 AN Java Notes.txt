@@ -1,0 +1,118 @@
+14 -> 55 -> 88 -> 69 -> 42 -> End
+
+
+
+public void reverse()
+{
+	Node temp = head;
+	Node prev = null;
+	while(temp != null)
+	{
+		Node abc = temp.next;
+		temp.next = prev; // reverse link
+		prev = temp; // move prev to next
+		temp = abc; // temp will move to next
+	}
+	head = prev;
+}
+
+
+
+public void countNodes()
+{
+	Node temp = head;
+	int count = 0;
+	while(temp!=null)
+	{
+		count++;
+		temp = temp.next;
+	}
+	SOP(count);
+}
+
+
+
+//Find the middle node value in a LL of size 7
+
+[0 1 0 1 1 1 0 1 0 1 0]
+zC = 5 
+oC = 6 
+T = 11
+
+zC=0;
+for(int i=0;i<T;i++)
+{
+	Arr[i] = obj.nextInt();
+	if(Arr[i] == 0) zC++;
+}
+for(i=0;i<T;i++)
+{
+	if(i < zC)
+		Arr[i] = 0;
+	else 
+		Arr[i] = 1;
+}
+
+
+count = 7
+public void middleNode()
+{
+	Node temp = head;
+
+	for(int i = 0; i<count/2 && temp!=null; i++)
+		temp = temp.next;
+
+	SOP("Middle value :" + temp.data)
+}
+
+
+
+class Node
+{
+	String data;
+	Node next;
+	Node(String data)
+	{
+		this.data=data;
+		this.next=null;
+	}
+}
+
+
+
+
+
+
+Store : Names
+
+
+Operations : 
+
+Add a name : "add"
+Remove : "delete"
+Modify : "update"
+Display : "show"
+Termination : "stop"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

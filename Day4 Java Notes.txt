@@ -1,0 +1,180 @@
+[ 12 14 17 19 23 27 29 31 37 41 60 ] 
+	0    1    2     3   4  5   6   7   8  9   10
+	L				   R				            						 
+															M
+L = M+1 
+
+R = M-1
+
+Target  : 31
+
+Linear : 8secs
+Binary : 3secs
+
+
+
+
+
+
+psvm(String hjfgj)
+{
+	Scanner obj = new Scanner(System.in);
+	int[] Arr = {102 144 17 190 2300 270 29 690};
+	int target = obj.nextInt();
+	int flag = 0;
+	for (int i =0;i<Arr.length; i++ ){
+		if (arr[i] == target){
+			flag = 1;
+			SOP("Element found at "+i);
+			break;
+		}
+	}
+	if( flag==0)
+	SOP("Element not found");
+	
+
+
+
+public static void Binary(int Arr[], int target, int left, int right)
+{
+		int mid = ( left + right ) / 2;   // left + (right - left) / 2 ; (int Limit)		 
+		static int flag = 0; 
+		if (Arr[mid] == target)
+		{	
+			flag = 1;
+			SOP("Element found at "+mid);
+			return;
+		}
+		else if( target < Arr[mid] )
+			right = mid-1;
+		else
+			left = mid+1;
+		Binary( Arr , target , left , right );
+	if(flag==0)
+		SOP("Element not found......");
+		return;
+}
+psv main(String hjfgj)
+{
+	Scanner obj = new Scanner(System.in);
+	int[] Arr = {12 14 17 19 23 27 29 60};
+	int target = obj.nextInt();
+	int left = 0;
+	int right = Arr.length-1;
+	Binary(Arr,target,left,right);
+}
+
+
+☕🍵
+public static void Binary(int Arr[], int target)
+{
+	int left = 0, right = Arr.length-1, f1,f2;	
+	while(left <= right)
+	{
+		int mid = ( left + right ) / 2;   // left + (right - left) / 2 ; (int Limit)		 
+		if( Arr[mid] == target) {
+			if( Arr[mid] == Arr[mid-1])    {
+				f1 = mid-1;
+				f2 = mid;     }
+			else if( Arr[mid] == Arr[mid+1] )  {
+				f1 = mid;
+				f2 = mid+1;    }
+			SOP("1st occurance Found at"+f1+" 2nd occurance at "+f2);
+			return;
+		else if( target < Arr[mid] )
+			right = mid-1;
+		else
+			left = mid+1;
+	} // end of loop
+		SOP("Element not found......");
+}
+
+
+
+
+
+
+
+
+
+
+
+int num=122;
+
+public void sqrt(int num)
+{
+	int i=1;
+	int ans=0;
+	while(true)
+	{
+		if ( i*i <= num) {
+				ans=i;	
+				i++;
+		} else {
+			SOP(ans);   
+			return;   }
+	} // loop
+} // function
+			
+
+122//2 
+l = 0, h = 121, m = 60 		: 60 *60 > 122
+l=0, h = 59, m= 29  			: 29 * 29 > 122
+l = 0, h = 28, m = 14  		: 14 * 14 > 122
+l =0, h=13, m = 6             : 6 * 6 < 122
+l = 7, h=13, m = 10 			: 10 * 10 < 122	
+l = 10, h = 13, m = 11      : 11 * 11 < 122
+l = 12, h=13, m = 12        : 12 * 12 > 122
+l=12, h=11						: low > high (fails)
+											return ans=11
+4//2
+2*2 == 4
+
+
+
+
+
+
+
+
+
+
+
+import java.util.Arrays;
+
+Arr.sort();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

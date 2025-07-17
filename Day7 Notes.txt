@@ -1,0 +1,391 @@
+Construct a Graph
+
+[0,0,1,0]
+[1,0,0,1]
+[1,1,0,1]
+[0,1,1,0]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Graph : Contains edges and vertices.
+** All trees are graphs, but not alll graphs can be Trees.
+
+** Directed : From every vertex, if there is a direction showing you where to go, then it is a DG. 
+** Every vertex in DG, should have only directed edges.
+
+** Undirected : From every vertex, there is no direction showing us, where to go, you can choose based on conditions / operations. 
+** All edges should be undirected only.
+** Between two vertices, with the help of only one edge, you can traverse back and forth.
+
+** Connected Graph : All vertices are connected to atleast, one of the vertex in the Gaph, there will not be any isolated vertex without any edge.
+** Every tree, by default is known as a Connected Graph.
+
+** Disconnected Graph : Among all the vertices, there will be a vertex or all vertices which are not having any edge or not connected to any other vertex.
+ 
+** Storing of edges, vertices and their data can be done in 2 ways. 
+	1. Storing in Adjacency Matrix.
+	2. Storing in Adjacency List.
+
+	
+Dense Graph : E ~ V ^ 2  : Adjacency Matrix.
+Sparse Graph : E ~ V / 2  : Adjacency List.
+
+
+Adjacency Matrix : You take a Matrix of size V x V.
+
+** Take all zeroes by default if there is no edge.
+** Replace 0's with 1's, if there is an edge between any two vertices.
+** If it is an undirected graph, if there is an edge between (0,1), there has to be an edge between (1,0). As it can be a Bidirected graph.
+
+** If it is DG, replace only based on direction, from - to. 
+[1,1,1,1]
+[0,1,1,1]
+[0,0,1,1]
+[0,0,0,1]
+
+
+[0,1,1,0]
+[0,0,0,0]
+[0,0,0,1]
+[0,0,0,0]
+
+
+1 : 2,3
+2 : 1
+3 : 1,4
+4 : 3
+
+[1,1,1,1]
+[0,1,1,1]
+[0,0,1,1]
+[0,0,0,1]     - Adjacency Matrix
+
+Adjacency List : It is going contain only the list of connected edges from the perspective of every vertex.
+** We ignore the disconnected edges in adjacency list.
+
+1 : 1,2,3,4
+2 : 2,3,4
+3 : 3,4
+4 : 4				- Adjacency List
+
+
+
+
+
+
+
+
+
+Inorder : D B A E C F 
+Preorder : A B C D E F 
+
+
+Inorder : D B H E A F C G I
+Preorder: A B D E H C F G I
+
+
+Inorder :   E D C B A 
+Preorder : A B C D E 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+V : 4   : 0,1,2,3
+Matrix = 4 x 4 
+E : 6
+List of Edges : 
+u v   u - source v - destination 
+1 2
+2 3
+0 3
+1 3
+0 1
+0 2
+
+For the same Edges list, create an Adjacency List (Connected edges)
+
+
+Matrix  = [0] * (V*V)
+matrix = [
+	[0,0,0,0], 
+	[0,0,0,0], 
+	[0,0,0,0], 
+	[0,0,0,0]
+]
+
+for i in range(0, E):
+	u = int(input())
+	v = int(input())
+	matrix[u][v] = 1
+
+
+int[][] matrix = new int[V][V];
+
+for (int i=0 ; i< E ;i++) 
+{
+	int u = nextInt()
+	int v = nextInt()
+	matrix[u][v] = 1
+}
+
+for(i)
+	for(j)
+		SOP(matrix[i][j] + " ");
+	SOPln() 
+
+
+
+[0,1,1,1]				- Directed Adjacency Matrix
+[0,0,1,1]
+[0,0,0,1]
+[0,0,0,0]
+
+0 : 1,2,3
+1 : 2,3
+2 : 3
+
+
+[0,1,1,1] 				- Undirected Adjacency Matrix
+[1,0,1,1]
+[1,1,0,1]
+[1,1,1,0]
+
+
+
+
+
+
+ArrayList<ArrayList<Integer>> list = new ..........
+
+for(0 --> V) 
+{
+	list.add(new ArrayList()<>);
+}
+
+for(0   -> E)
+{
+		int u = 
+		int v = 
+					list[u].add(v);   // list[u].append(v)
+					list[v].add(u);   // list[v].append(u)   #undirected graph
+}
+Undirected Graph :
+0 [3,1,2]
+1 [2,3,0]
+2 [3,1,0]
+3 [2,1]
+
+Directed Graph :
+0 [3,1,2]
+1 [2,3]
+2 [3]
+3 []
+
+
+
+LinkedIn    ->     Remind me after 15.00
+
+
+
+
+
+
+
+
+
+4 : 0,1,2,3,5
+3 : 0,1,2,5
+1 : 0,2,5
+5 : 0,2
+2 : 0
+0 :
+vis == V 
+
+1. visited =  [4,3,1,5,2,0]
+
+2. visited =  [1,1,1,1,1,1]
+
+
+BFS : 
+
+[]
+
+finalBFS = [2, 1, 5, 0, 4, 3]
+
+BFS Steps :
+1. Start at one vertex
+2. Push it into Queue.
+3. When you are vertex, pop it out from Queue, and push it into FinalList.
+4. Push all neighbouring vertices into the Queue.
+5. Go and access the vertex at Front.
+6. Go to step 3 
+7. When list size == Count of Vertices, break out.
+
+
+
+
+
+DFS : 
+
+1. Start at a Vertex.
+2. Choose any unvisited, connected vertex from it.
+3. Go to next Vertex, and repeat Step 2.
+4. When you find only visited vertices for any Node, go back to the previous vertex.
+5. Repeat step 2, until SizeOfList == Vertex count
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DFS :
+
+[2 5 4 3 0 1]
+
+
+
+
+
+
+
+
+vis = V  
+
+V = 6 
+
+lis = [[....]]
+
+start = int(input())
+visited = [False] * V 
+res = [0] * V   // 2nd way
+ 
+def dfs(node):
+	visited[node] = True  // 0, 5, 3, 2, 4, 1
+	print(node, end=" ")   // res.append(node)
+	for neighbour in list [node]:   # Gives us connected nodes
+		if not visited[neighbour]:   # check only unvisited nodes
+			dfs(neighbour)
+
+dfs(start) 
+print(res)
+					
+
+
+
+
+
+
+
+
+
+
+
+start = int(input())
+visited = [False] * V 
+queue = deque()
+queue.append(start)
+visited[start] = True
+res = [0] * V    // 2nd way
+//5 
+def bfs():
+	while queue:  
+		node = queue.popleft()
+		print(node, end=" ")    // res.append(node)
+		for neighbour in list [node]:         # Gives us connected nodes
+			if not visited[neighbour]:   # Check only unvisited nodes
+				visited[neighbour] = True
+				queue.append(neighbour)		
+
+
+
+bfs()
+print(res)
+
+
+
+
+
+start = 2 
+2 1 : 1
+2 0 : 2
+2 3 : 3
+2 4 : 2
+2 5 : 1
+start = 3
+3 0 : 2
+3 1 : 3
+3 4 : 1
+3 5 : 2
+3 2 : 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

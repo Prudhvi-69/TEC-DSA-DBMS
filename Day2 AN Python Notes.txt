@@ -1,0 +1,161 @@
+def reverse(self):
+	temp = self.head
+	prev = None
+	while temp is not None:
+		abc = temp.next
+		temp.next = prev
+		prev = temp
+		temp = abc
+	head = prev
+
+
+def countNodes(self):
+	temp = self.head
+	count=0
+	while temp is not None:
+		count+=1
+		temp = temp.next
+	print(count)
+
+
+
+#Find the middle node value in a LL of size 7
+Nodes = 7
+
+def middleNode(self):
+	temp = self.head
+
+	for itr in range(0,count//2): #0 1 2 3
+		if temp is not None:
+			temp = temp.next;
+
+	print("middle value :", temp.data)
+	
+
+
+
+
+
+
+
+
+
+
+
+
+class Node:
+	def __init__(self, data):
+		self.data=data
+		self.next=None
+	
+
+	
+Store : Names
+
+
+Operations : 
+
+Add a name : "add"
+Remove : "delete"
+Modify : "update"
+Display : "show"
+Termination : "stop"
+
+
+
+
+Output :
+
+Choose one option :
+["Add" || "Delete" || "Update" || "Show" || "Stop"] 
+Operation : add 
+
+Insert a Name : Anish
+
+Choose one option :
+["Add" || "Delete" || "Update" || "Show" || "Stop"] 
+Operation : add 
+
+Insert a Name : Srija 
+
+Choose one option :
+["Add" || "Delete" || "Update" || "Show" || "Stop"] 
+Operation : add 
+
+Insert a Name : Bharath U
+
+Choose one option :
+["Add" || "Delete" || "Update" || "Show" || "Stop"] 
+Operation : add 
+
+Insert a Name : Sai Sree
+
+Choose one option :
+["Add" || "Delete" || "Update" || "Show" || "Stop"] 
+Operation : add 
+
+Insert a Name : Heeba
+
+Choose one option :
+["Add" || "Delete" || "Update" || "Show" || "Stop"] 
+Operation : update 
+
+Modifying Value : Heba
+
+Choose one option :
+["Add" || "Delete" || "Update" || "Show" || "Stop"] 
+Operation : show
+
+Names : Anish | Srija | Bharath U | Sai Sree | Heba 
+
+Choose one option :
+["Add" || "Delete" || "Update" || "Show" || "Stop"] 
+Operation : Stop
+
+Application exited successfully.........🐷 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0's and 1's
+
+
+
+
+
+
+
+
+
+
+
+

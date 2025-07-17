@@ -1,0 +1,203 @@
+Linked List : Linear Data Structure, which is going to contain two parts in it, where it is going to store data in it and another part is going to store the reference to the next node in the list.
+ 
+** Each node at first going to contain the data but reference part as empty.
+** When you are linking nodes in the list, each time assign the reference of next node, in the link part of the current node.
+** Last node should always be containing the null / None value.
+** First node in the list is known as head, considering as the strating point in the linked list.
+
+
+
+-------creating a node--------
+class Node:
+	def __int__(self, data):
+		self.data = data
+		self.next = None
+
+class Node
+{
+	int data;
+	Node next;
+	Node(int data)
+	{			this.data = data;   
+				this.next = null;  
+	}
+}
+
+----- taking head value -----------
+
+class LinkedList
+{
+	Node head;	
+	public void insertBegin(int data)
+	{
+			Node newnode = new Node(data);
+			if (head == null)
+				head = newnode;
+			else{
+				newnode.next = head;
+				head = newnode; 
+			}	
+}		
+
+public void display()
+{
+	if(head == null)
+	{
+		SOP("No Nodes in the List");
+		return;
+	}
+	Node temp = head;
+	while(temp != null)
+	{ 		
+			SOP(temp.data + " ->");
+			temp = temp -> next;
+	}
+	SOP(" End ");
+}
+
+
+
+
+
+
+
+
+// insertion at the ending 
+
+public void insertEnd(int data)
+	{
+			Node newnode = new Node(data);
+			if (head == null)
+				head = newnode;
+			else{
+				Node temp = head;
+				while(temp.next != null)
+						temp = temp.next;
+				temp.next = newnode;
+			}	
+}		
+
+pos = 4
+
+public void insertPos(int p,int data)
+{
+		Node newnode = new Node(data);
+		if (head == null)
+			head = newnode;
+		else{
+			Node temp = head;
+			int i;
+			for(i=1; (i<pos) && temp!=null ; i++)
+			{
+				temp = temp.next;
+			}	
+			newnode.next=temp.next
+			temp.next = newnode
+		}
+}
+public void deleteEnd()
+{
+	if(head==null){
+		SOP("Not Possible");
+		return;
+	}else{
+		Node temp = head;
+		Node abc = null;
+		while(temp.next!=null)
+		{
+				abc = temp;
+				temp = temp.next;
+		}
+		abc.next = null;
+		delete temp;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+insertBegin(10);
+insertBegin(42);
+
+class LinkedList : 
+	Node head
+	def __init__(self):
+		self.head = None
+
+	def insertBegin(self, data):
+		Node newnode = Node(data)
+		if head==None:
+			head = newnode
+		else:
+			newnode.next = head
+			head = newnode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

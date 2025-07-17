@@ -1,0 +1,120 @@
+Queue<Integer> queue = 
+LinkedList<>();
+
+int start = obj.nextInt();
+int[] visited = new int[V]
+
+Arrays.fill(visited, 0);
+visited[start] = 1;
+queue.add(start);
+
+while(queue.isEmpty())
+{
+	Graph node = queue.poll();
+ 	for(int neighbour = 0; neighbour < list[node] ; n++ )
+	{
+		if (visited[neighbour] ==0 )
+		{
+			visited[ neighbour] = 1;
+			list [ neighbour ] = list[ node] + 1;
+			queue.add(neighbour);
+		}
+	}
+}	
+
+for(int i = 0; i< list.length;i++)
+{
+	if (i==start)
+		contiinue;
+	SOPln(start + " - " + i + " : "+ list[i])
+}
+
+
+
+
+
+
+
+
+
+
+
+MinCost = -1
+
+2 -> 3 -> 0 -> 1
+ 
+currentCost = 2+3+7 = 12
+
+if minCost > currentCost:
+		minCost = currentCost  //12
+
+
+3 -> 2 -> 1 -> 0
+
+currentCost = 2+4+7 = 13
+
+1 -> 2 -> 3 -> 0
+
+currentCost = 4+2+3 = 9
+
+
+0 -> 3 -> 2 -> 1 
+
+currentCost = 3+2+4 = 9
+
+
+print minCost  //9
+
+
+
+
+
+Kruskal's : Edge based algorithm.
+
+1. Take all edge values and sort them in Ascending order
+2. Sort all weights.
+3. Take the lowest weight first and connect the vertices.
+4. Take the next lowest weight and connect the vertices.
+5. After connecting those edges, if it is forming a cycle, ignore the             		current edge value and consider the next lowest edge value.
+6. Do it repeatedly until all vertices are visited.
+
+12 24 6 18 22 27 2 1 21 10
+
+
+1 2 6 10 12 18 21 22 24 27
+
+
+
+
+
+
+
+1 6 10 12 18 20 21 22 24 27
+
+1 6 10 12 18 21 22 24 27 201
+
+1 6 10 12 18 24 27 201 210 220
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

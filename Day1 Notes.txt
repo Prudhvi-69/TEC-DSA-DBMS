@@ -1,0 +1,223 @@
+int Arr[69];
+
+Arr[0] = 55;			- Takes directly
+Arr[1] = 55.33; - Converts
+Arr[2] = 'A';      - Converts
+Arr[3] = "TEC"  - This gives us Error
+
+[55,55,65]
+  0    1   2
+
+
+
+'Y' 'A' 'M' 'I' 'N' 'I'
+
+YES
+
+
+
+[ 6, 9, 42, 45, 69, 106, 420 ]
+	0  1   2   3    4     5     6
+
+Deletion 
+1st : based on index 
+											index : 5
+
+2nd : based on value 
+											value : 420
+
+
+
+10:57 23-06-2025
+11:07
+
+
+
+
+
+float input using scanf(): 2.12
+ scanf("%f",&fl);
+
+float input in the program : 2.12
+	al=2.12;
+
+fl and al are not equal
+
+[ 6, 9, 42, 45, 69, 106, 420 ]
+
+3
+
+6 9 42 69 106 420
+H_W / R_W / S_W : Write a Program of your choice.
+
+**T&C : 
+1. It should not be EASY for others.
+2. It should be UNIQUE.
+
+
+
+
+
+
+
+1. Add all the odd values in an Array
+2. Add all odd indexed values in an Array
+
+Note : Find time complexity for the code......
+Time Complexity : Amount of Time taken to run the code from the beginning till the end in units......
+
+
+
+
+
+
+
+
+
+
+
+Size : 6
+
+Array : 14 88 57 23 46 87
+
+Rotations : 70
+
+Output : 46 87 14 88 57 23
+
+
+
+Prime : 
+
+1. Find if a number is Prime or not
+2. Find set of Primes in a range
+3. Find number of Primes
+
+
+
+
+10 : 1 2 5 10
+PF : 1 2 5
+
+11: 1 11
+PF : 1
+
+
+
+
+n = int(input())
+f = 0;
+x = math.sqrt(n)
+for i range(2, x):
+	if n%i == 0:
+		f=1;
+		break;
+if f==0:
+	print(" Yessssssssssssssssssssss");
+else:
+	print("bad luck");
+
+
+
+
+int x = Math.sqrt(n);
+int f=0;
+for(int i=2;i<x;i++)
+{
+	if( n%i==0)
+	{
+		f=1;
+		break;
+	}
+}
+
+[ 1 5 8 69 6 9 42 10 ]
+
+5+10 = 15
+
+1. Check if there is a possibility of two sum
+2. Display the values giving target sum
+
+
+
+
+
+
+t = 15 
+[ 1 5 8 69 6 9 42 10 ]
+
+for( int i=0;i<N-1;i++)
+{
+	for( int j=i+1;j<N;j++) 
+	{
+		if(Arr[i]+Arr[j] == t)	
+				SOP(Arr[i] + " and "+Arr[j]);
+	}
+}
+
+[ 40 2 5 10 15 2 12 ]
+
+1. Find max profit 
+2. Find max profit, buying day, selling day
+prices = [ 40 2 5 10 15 2 12 ]
+F = 0, buy = 0, sell =0 , i=0
+minP = float('inf')
+for value in prices :
+	i += 1
+	 if value < minP		#BUYING AT LOWEST COST
+		minP = value   
+		buy = i   # 2 
+#SELLING WITH HIGHEST PROFIT
+	elif value - minP > F:  // 12-2>13
+		F = value - minP  // 13
+		sell = i   # 3, 4, 5 
+print(F)	  # HIGHEST PROFIT VALUE
+
+
+Size = 15 
+[ 4 10 12 69 22 42 77 12 13 48 69 88 63 45 42 ]
+
+12 + 69 + 42 + 12 + 88 + 45 = 
+
+Output : 268 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'
+

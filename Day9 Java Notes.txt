@@ -1,0 +1,183 @@
+3<<3   : 
+
+0000 0011
+1st : 0000 0110
+2nd : 0000 1100
+3rd : 0001 1000
+
+22>>3 
+11
+5
+2
+0001 0110
+1st : 0000 1011
+2nd : 0000 0101
+3rd : 0000 0010
+
+
+
+
+
+
+
+4 & 9					: 0, 	
+5 & 14				: 4, 
+12 | 10			: 14, 0, 6,  
+10 & 1				: 0
+11 & 0				: 0
+6 | 6					: 6
+0 | 1					: 1
+
+1100
+1010
+1110
+
+
+4 && 9					:  true 	
+5 && 14				:  true 
+12 || 10					:  true  
+10 && 1				:  true
+11 && 0				:  false
+6 || 6						:  true
+0 || 1						:  true
+10 && -10      :  true
+-10 || -10				: true 
+
+Logical &&
+
+NZ  NZ   true
+Z     Z 			false
+Z     NZ    false
+NZ   Z 		false
+
+
+
+
+
+39-13+(13-13+(4-13-12))))
+
+
+
+
+150 152 154 154 152 150 
+ 
+Disclaimer : Not to use any builtin methods/classes to solve
+
+
+Input : "df546fcv7cvb w33xf"
+Output : 7
+
+String str = obj.nextLine();
+char max = '0';  // 48
+for(char c : str.toCharArray())
+{
+	if (c>='0' && c<='9')// c>=48 && <58
+	{
+			if max<c	max=c;
+	}
+}
+sop(max)  // '7' - char (int)
+int m = '7' - '0'  // '7' - 48;
+sop(m)   // 7
+
+
+Input : "df54 69fcv17cvb w33xf"
+
+String str = obj.nextLine();
+int max = 0;
+int num=0;
+for(char c : str.toCharArray())
+{
+	if (c>='0' && c<='9')// c>=48 && <58
+	{
+		int digit = c-48; // 7
+		num = num * 10 + digit; 
+		if (max < num) max = num;  // 69
+	}
+	else	  num = 0;
+}
+SOP(max); // 69
+
+
+
+
+
+
+
+
+
+
+"fufh876h"  : invalid
+"DFGFHGG56YTGF" : invalid
+"645yttyrGDFnb" : invalid
+"@$gfhgSFG" : invalid
+"$#FDFH$54dg" : Valid
+"@Ar878" : inValid
+
+min length : 11
+upper
+lower
+digit
+special 
+
+
+
+
+
+
+
+public void pass(int count)
+{
+Sop("Enter password :")
+String s = obj.nextLine();
+if(s.length() < 11)
+	SOP("Invalid");
+else{
+	for(char c:s.toCharArray())   {
+	bool uc=lc=dc=sp=false;
+	if(c>=65 && c<=90)
+		uc=true;
+	else if(c>=97 && c<=122)
+ 		lc=true;
+	else if(c>=48 && c<=57)
+ 		dc=true;
+	else
+		sp=true;
+}
+if(uc && lc && dc && sp)
+	SOP("Valid");
+	return
+else
+{
+	if (count==5)
+		SOP("Max limit is reached....");
+		return;
+
+	SOP("Invalid password ");
+	count++;
+	pass(count);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+input : "abc"
+
+"ab"
+"ac"
+"bc"
+"ba"
+"ca"
+"cb"
+
+
+

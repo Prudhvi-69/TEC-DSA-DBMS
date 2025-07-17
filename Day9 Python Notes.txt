@@ -1,0 +1,66 @@
+str = input()
+li = []
+for i in range(len(str)):
+	if ord(str[i]) >= 48  && ord(str[i] <58:
+		li.append(str[i])
+
+max(li)
+
+
+
+
+s = input()
+m = 0
+num = 0 
+for i in range(len(s)):
+		if ord(s[i]) >= 48  && ord(s[i]) <58:
+			digit = ord(s[i]) - 48
+			num = num * 10 + digit
+			if m < num:
+				m = num
+		else:
+			num = 0
+
+print(m)
+
+
+
+
+
+
+
+if len(s) > 11:
+	print("invalid")
+else:
+	for i in range(len(s)):
+		uc = lc = dc = sp = False
+		if ord(s[i]) > 64 && ord(s[i])<91:
+			uc = True
+	elif ord(s[i]) > 96 && ord(s[i])<123:
+			lc = True
+	elif ord(s[i]) > 47 && ord(s[i])<58:
+			dc = True
+	else : 		
+			sp = True
+if uc and lc and dc and sp:
+	print("Valid")
+else:
+	print("invalid")
+
+
+
+
+"109.65.100.80"
+
+
+
+
+
+
+
+
+
+
+
+
+

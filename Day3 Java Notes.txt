@@ -1,0 +1,163 @@
+Java : Collection, Stack.
+ ** Builtin functions for all operations.
+
+
+
+
+
+
+
+
+class Stackkkkkk:
+	def __init__(self,top):
+		self.stack = []
+		self.top = top
+	def push(self, data):
+		if len(self.stack) >= self.top:
+			print("Stack Overflow...")
+			return 
+		self.stack.append(data);
+	def pop(self):
+		if not self.stack:
+			print("Stack underflow..")
+			return
+		self.stack.pop()
+
+	def peek(self):
+		if not self.stack:
+			print("Stack underflow..")
+			return
+		print(self.stack[-1])
+ 
+
+	def display(self):
+		if not self.stack:
+			print("Stack underflow..")
+			return
+		while self.stack:
+			print(self.stack[-1] )
+			self.stack.pop()
+
+1st Way :
+
+"{[(}]<)<>>"   :  NO
+"{[()]}<>{}"		: YES
+
+	
+2nd Way :
+
+"{[(}]<)<>>"  : YES
+"{[()]}<>{}"		: YES
+
+
+
+
+
+
+
+
+def valid(s: str) -> bool
+	stack = []
+	mapping = { '}':'{', ']':'[', ')':'(', '>':'<' }
+	if not s:  
+		return false								# {[()]}<>   : true 
+	else:												# {([})]      : false 
+		for c in s:
+			if c in mapping:
+				top = stack.pop() if stack else '#'
+				if mapping[top] != c:										# < <
+					return false
+			else:
+				stack.append(c)		   #    
+	return stack.isEmpty()		#true	
+
+
+
+
+
+size = 8;
+front = 0;
+rear = 0;
+Queue<int> queue = LinkedList<>();
+public void enQueue(int data)
+{
+	if(rear >= size-1)
+	{
+		SOP("Queue is Full");
+		return;
+	}
+	queue[rear++] = data;
+}
+
+public void deQueue()
+{
+	if(front > rear) 
+	{
+		SOP("Queue is Empty....");
+		return;
+	}
+{-------" Move every from next to current,     "-------}
+	front++;
+}
+
+public void peek()
+{
+	if(front > rear) 
+	{
+		SOP("Queue is Empty....");
+		return;
+	}
+	SOP(queue[front]);
+}
+
+public void display()
+{
+	if(front == rear) 
+	{
+		SOP("Queue is Empty....");
+		return;
+	}
+	for(; front<=rear ; front++)
+		SOP( queue[front] );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Queue<int> queue = new LinkedList<>();
+
+// Enqueue
+queue.add(44);   // insert at ending
+queue.add(778); // insert at ending
+queue.add(69); 
+queue.add(106); // insert at ending
+queue.add(42);   // insert at ending         Queue = [44, 778, 69, 106, 42]
+
+//Dequeue 
+queue.poll();   // remove 1st value, move front  Queue = [778, 69, 106, 42]
+queue.poll();   // remove 1st value, move front  Queue = [69, 106, 42]
+ 
+//Peek
+queue.peek();  // display value at front, without deleting : 69
+
+
+
+
+
+
+
+

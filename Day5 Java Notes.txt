@@ -1,0 +1,151 @@
+☕🍵
+Arr = [ 11 47 58 69 12 106 ] 
+public void reverse(int []Arr,int ind)
+{
+	if( ind == Arr.length)
+		return;
+	reverse(Arr,infd+1);
+	SOP(Arr[ind] + " " );
+}
+
+
+public int[] reverse(int []Arr, int left, int right)
+{
+		if ( left >= right)
+			return Arr;
+		int temp = Arr[left];
+		Arr[left] = Arr[right];
+		Arr[right] = temp;
+		reverse(Arr, left+1, right-1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Arr = [106 12 69 58 47 11]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3
+target = 3rd step
+
+111
+12
+21
+3
+
+target = 4th step, max = 3 
+1111
+112
+121
+211
+13
+31
+22
+
+
+target = 5th step, max = 3  -> 13 
+
+target = 6th step, max = 3  -> ans 
+
+
+11111
+1112
+1121
+1211
+2111
+221
+212
+122
+131
+113
+311
+23
+32
+
+
+
+
+
+0 1 1 2 3 5 8 13 21 34 .........
+ 
+
+
+
+
+
+s0 = 1
+s1 = 1
+s2 = 2
+
+if steps == 1 || steps == 2:
+
+
+
+
+
+
+public void calculate(int step)
+{
+	if(step<=0) {
+		SOP("Invalid");
+		return;
+	} else if(step==1 || step==2) {
+		SOP(step);
+		return;
+	} else {
+		int s0=1,s1=1,s2=2,res=0;
+	}  for(int i=3; i<=step; i++)  {
+		res = s0+s1+s2;
+		s0 = s1; s1=s2; s2 = res;
+	}
+	SOP(res);
+}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,243 @@
+a = 4
+b = 13
+
+a = a^b  - 1001
+b = a^b  - 100 - 4
+a = a^b - 1101 - 13
+
+
+
+
+0100
+1101
+
+1001
+0100
+1101 - 13
+
+
+
+
+
+
+
+[     ]
+[     ]
+[     ]
+[     ]
+[     ]
+
+[     ] [     ] [     ] [     ] [     ]
+
+
+
+
+
+
+Stack : It is a Data Structure that follows, LIFO or FILO order for insertion, deletion or accessing of elements.
+
+Each operation on stack is having its own terminology.
+** Each of things are given a name according to how an insertion is done, with the name : Push.
+** Deleting from the stack is given a name known as : Pop.
+** Looking at the elements in the stack is given a name : Peek.
+** All the operations are going to be done at one place that is going to known as top or top of stack(tos).
+** When there are NO values in the stack, TOP is going to point to the unaccessible index which is : -1 index.
+
+
+class Stackkkkkkkkk
+{
+	int[] Stack = new int[ size ];
+	int top = -1;
+	public void push(int data)
+	{
+		if (top==size-1)
+		{
+				SOP("Stack Overflow");
+				return;
+		}
+		Stack[++top] = data;
+	}
+	public int pop()
+	{
+		if(top==-1) 
+		{
+				SOP("Stack underflow");
+				return;
+		}
+		top--;
+	}
+	public void peek()
+	{ 
+		if(top==-1) 
+		{
+				SOP("Stack underflow and No values in the Stack...");
+				return;
+		}
+	SOP("Top most element : "+ Stack[top]);
+	}
+	
+	public void display()
+	{
+		if(top==-1) 
+		{
+				SOP("Stack underflow and No values in the Stack...");
+				return;
+		}
+		for(; top>=0; top--)
+			SOP(Stack[ top ] +" ");
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n = 1
+fun(int n)  // fun(1),  fun(2),  fun(3)...... 4 5 6
+	if n > 6 
+		return
+	print n
+	fun(n+1)
+
+
+
+
+
+
+def fun(self, str):
+	size = self.str.len()
+	print( size )
+
+
+
+"{[(}]<)<>>"
+
+1. NOOO
+
+2. YESSSSSSSSS
+
+
+
+
+
+
+
+public Boolean valid(String s)
+{
+	Stack<Character> stack = new Stack<>();	
+	if (s.isEmpty()) return false;
+	for(char c : s.toCharArray)
+	{
+		if(c=='{' || c=='[' || c=='(' || c=='<)    stack.push(c);
+		else{
+			char top = stack.pop();
+			if ( c=='}' && top!='{' && 	c==']' && top!='[' && 
+					c==')' && top!='(' && 	c=='>' && top!='<'  )
+						return false;
+			}
+		}
+		return stack.isEmpty();
+}
+
+psvm()
+{
+	SOP(valid("{[(}]<)<>>"));   // false
+	SOP(valid("{[()]}<>{}"));  // true
+}
+
+
+
+
+
+Enqueue : Used to insert values at the rear end.
+
+Dequeue : Used to delete values from the front end.
+
+Peek : Used to display the next element to be deleted (It will not delete the element, just show). 
+
+Display : If you want to display all the elements from the Queue, we have to dequeue it till there are no values left in Queue.
+
+
+
+
+Size = 10
+[45, 88, 36, 69, 2, 106, 42, 790]
+  		   		F		F		F		F   F	R
+											            F 
+
+
+[45, 88, 36, 69, 2, 106, 42, 790]
+  F											  R
+loop  : 0 -> rear-1
+
+queue[ i ] = queue[ i+1 ];
+rear--;
+
+
+
+class Q_ops:
+	def __init__(self,size):
+		self.front = 0
+		self.rear = 0
+		self.size = size
+		self.queue = [None] * size
+
+	def enqueue(self, data):
+		if self.rear >= self.size-1:
+			print("Queue is Full")
+			return
+		self.queue[ self.rear ] = data
+		self.rear += 1
+
+	def dequeue(self):
+		if self.front > self.rear:
+			print("Queue is Empty")
+			return
+		for i in range(front, rear-1):
+			queue[ i ] = queue[ i+1] 
+		rear -=  1
+	
+	def peek(self):
+		if self.front > self.rear:
+			print("Queue is Empty")
+			return
+		print(self.queue[self.front] )
+
+
+	
+
+
+
+
+
+
+
+
